@@ -36,7 +36,7 @@ def qr_code_read(ld,p=lne,h=5):
         x+=h
       y+=h;x=h
 
-# en dev
+# =============== En Dev ===============
 def qr_code_informat(data=bin(0b101),h=5):
   lzb='0x'
   for i in range(3,18):
@@ -46,6 +46,7 @@ def qr_code_informat(data=bin(0b101),h=5):
       lzb+='ff'
   fill_rect(9*h,h,h,h,color(int(lzb[2:5],16)))
   fill_rect(9*h,2*h,h,h,color(int(lzb[4:7],16)))
+# ======================================
     
 
 p="00ff00ff00000000ff"

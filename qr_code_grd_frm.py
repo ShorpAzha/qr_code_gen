@@ -5,9 +5,7 @@ from copyl import copy_qr, qr_code_read
 
 '''
 Make by Shorp
-Dev: 
-
-
+Dev en cours
 '''
 
 def qr_code(cc=9,h=5):
@@ -31,5 +29,3 @@ def qr_code(cc=9,h=5):
   copy_qr(1,1,cc+16,cc+16,h)
   sleep(2)
   qr_code_read(cc+16)
-        
-qr_code(11,5)
